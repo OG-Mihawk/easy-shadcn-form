@@ -40,7 +40,7 @@ No additional installation is required; just import the component into your file
 To use the input component, move the "Input_form.tsx" file from the "components" directory to your "src" folder.
 
 ```tsx
-<Input_Form control={form.control} name="username" label="Username" />
+<InputForm control={form.control} name="username" label="Username" />
 ```
 
 ## Select
@@ -78,7 +78,7 @@ npm install @radix-ui/react-icons
 ### Example
 
 ```tsx
-<Calendar_Form placeholder="Choose a date" control={form.control} name="date" label="Date" />
+<CalendarForm placeholder="Choose a date" control={form.control} name="date" label="Date" />
 ```
 
 ## Radio group
@@ -94,11 +94,11 @@ npx shadcn-ui@latest add radio-group
 ### Example
 
 ```tsx
-<RadioGroup_form control={form.control} name="radio">
+<RadioGroupForm control={form.control} name="radio">
     <RadioGroupItemForm value="1">Choice 1</RadioGroupItemForm>
     <RadioGroupItemForm value="2">Choice 2</RadioGroupItemForm>
     <RadioGroupItemForm value="3">Choice 3</RadioGroupItemForm>
-</RadioGroup_form>
+</RadioGroupForm>
 ```
 
 ## Checkbox
@@ -114,7 +114,7 @@ npx shadcn-ui@latest add checkbox
 ### Example
 
 ```tsx
-<Checkbox_Form control={form.control} name="mobile" value_checkbox="mobile" description="Mobile" />
+<CheckboxForm control={form.control} name="mobile" value_checkbox="mobile" description="Mobile" />
 ```
 
 For stability, ensure that the variable `mobile` is a list and is initialized as follows:
