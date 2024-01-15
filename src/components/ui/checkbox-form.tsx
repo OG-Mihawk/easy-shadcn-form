@@ -20,7 +20,7 @@ export interface CheckboxProps {
   value_checkbox: string
 }
 
-const Checkbox_Form = React.forwardRef<
+const CheckboxForm = React.forwardRef<
   React.ElementRef<typeof CheckboxPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root> & CheckboxProps
 
@@ -84,6 +84,6 @@ const Checkbox_Form = React.forwardRef<
     )}
   />
 ))
-Checkbox_Form.displayName = CheckboxPrimitive.Root.displayName
+CheckboxForm.displayName = CheckboxPrimitive.Root.displayName
 
-export { Checkbox_Form }
+export { CheckboxForm }

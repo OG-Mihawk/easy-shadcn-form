@@ -18,7 +18,7 @@ export type CalendarProps = React.ComponentProps<typeof DayPicker> & {
   placeholder?: string
 }
 
-function Calendar_Form({
+function CalendarForm({
   className,
   classNames,
   showOutsideDays = true,
@@ -118,6 +118,6 @@ function Calendar_Form({
     
   )
 }
-Calendar_Form.displayName = "Calendar"
+CalendarForm.displayName = "Calendar"
 
-export { Calendar_Form }
+export { CalendarForm }

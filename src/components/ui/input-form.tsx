@@ -15,7 +15,7 @@ export interface InputProps
   label: string
 }
 
-const Input_Form = React.forwardRef<HTMLInputElement, InputProps>(
+const InputForm = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, control, name, label, ...props }, ref) => {
     return (
 
@@ -46,6 +46,6 @@ const Input_Form = React.forwardRef<HTMLInputElement, InputProps>(
     )
   }
 )
-Input_Form.displayName = "Input"
+InputForm.displayName = "Input"
 
-export { Input_Form }
+export { InputForm }

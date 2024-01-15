@@ -12,7 +12,7 @@ import {
   FormMessage,
   FormControl,
 } from "./form"
-const RadioGroup_form = React.forwardRef<
+const RadioGroupForm = React.forwardRef<
   React.ElementRef<typeof RadioGroupPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root> & {
     control: any
@@ -45,7 +45,7 @@ const RadioGroup_form = React.forwardRef<
     />
   )
 })
-RadioGroup_form.displayName = RadioGroupPrimitive.Root.displayName
+RadioGroupForm.displayName = RadioGroupPrimitive.Root.displayName
 
 const RadioGroupItemForm = React.forwardRef<
   React.ElementRef<typeof RadioGroupPrimitive.Item>,
@@ -74,4 +74,4 @@ const RadioGroupItemForm = React.forwardRef<
 })
 RadioGroupItemForm.displayName = RadioGroupPrimitive.Item.displayName
 
-export { RadioGroup_form, RadioGroupItemForm }
+export { RadioGroupForm, RadioGroupItemForm }
